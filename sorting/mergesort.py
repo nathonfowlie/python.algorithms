@@ -39,8 +39,8 @@ def topdown_merge_sort(arr):
         right = arr[middle:]
 
         # Recurse until the array contains a single element.
-        left = merge_sort(left)
-        right = merge_sort(right)
+        left = topdown_merge_sort(left)
+        right = topdown_merge_sort(right)
 
         left_index = 0
         right_index = 0
